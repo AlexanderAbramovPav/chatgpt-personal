@@ -13,6 +13,7 @@ In the process of creating the project, the following approaches and technologie
 * Next.js 13
 * Backend (Firebase)
 * Tailwind CSS
+* Vercel
 * Implementation of responsive design (desktop approach used)
 
 ## Link to the full project in production:
