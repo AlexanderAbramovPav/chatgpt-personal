@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# production
+/.next
+/out
+
+# yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnp.*
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# next.js build
+.next/
+
+# typescript
+*.tsbuildinfo
+
+# local env files
+.env.local
+
+# vercel
+.vercel/output
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
