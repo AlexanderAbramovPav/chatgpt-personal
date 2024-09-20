@@ -15,9 +15,11 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
 ) {
-    const models = await openai.listModels().then((res) => res.data.data);
+    const models = await openai.models.list().then((res) => res.data);
 
-    const modelOptions = models.map((model) => ({
+    const modelOptions = models
+    .filter(model => /^gpt-4/.test(model.id) || /^gpt-3/.test(model.id))
+    .map(model => ({
         value: model.id,
         label: model.id,
     }));
